@@ -1,5 +1,4 @@
 // Implements Linear Congruential Generator pseudo number random generator
-//https://www.upwork.com/ab/proposals/job/~016bf99211be9dd9c4/apply/#/
 _LCG = (seed, m, a, c) => {
     const newSeed = (seed * a + c) % m;
     return newSeed;
@@ -25,8 +24,7 @@ const random = (min, max) => {
     }
 };
 
-const rollDice = random(1, 6);
 module.exports = {
     random,
-    rollDice
+    rollDice: random(1, 6),
 }
