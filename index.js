@@ -1,4 +1,3 @@
-// Implements Linear Congruential Generator pseudo number random generator
 _LCG = (seed, m, a, c) => {
     const newSeed = (seed * a + c) % m;
     return newSeed;
